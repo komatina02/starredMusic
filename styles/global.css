@@ -1,0 +1,129 @@
+html {
+  font-family: "Jost", sans-serif;
+}
+
+:root {
+  --orange-main: #ff4727;
+  --blue-light: #e5f8ff;
+  --blue-dark: #040661;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0.3rem;
+  z-index: 2000;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  z-index: 2000;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff745cc9;
+  border-radius: 10px;
+  z-index: 2000;
+  transition: all ease-in-out 0.4s;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--orange-main);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-container {
+  width: calc(100vw - 0.3rem);
+  overflow-x: hidden;
+}
+
+.nav {
+  padding: 0rem 4rem;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 4.5rem;
+  background: var(--blue-light);
+}
+
+.nav .links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 2rem;
+}
+
+.nav .links a {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+button.main-btn {
+  padding: 0.5rem 2.6rem;
+  background: var(--orange-main);
+  border-radius: 1.5rem;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+footer .logo {
+  flex: 1;
+}
+
+footer .logo img,
+.nav img {
+  width: 4rem;
+}
+footer .links {
+  flex: 1;
+}
+footer .social-media {
+  flex: 1;
+}
