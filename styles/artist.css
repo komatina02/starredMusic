@@ -1,0 +1,27 @@
+.group {
+    height: 1000px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    color: #ff4727;
+    margin: 3rem 3rem;
+    flex-wrap: wrap;
+    
+}
+.artist{
+    
+    width: 400px;
+    height: 80px;
+    padding: 4rem 4rem 4rem 4rem;
+}
+
+.artist img{
+    width: 225px;
+    height: 270px;
+    
+}
+
+.artist h2{
+    align-self: center;
+}
+
