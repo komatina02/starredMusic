@@ -1,6 +1,5 @@
 .hero {
   gap: 4rem;
-  padding: 0 8rem;
   min-height: calc(100vh - 4.5rem);
   margin-top: 4.5rem;
   background: var(--blue-light);
@@ -30,7 +29,6 @@
 .site-mission {
   min-height: calc(100vh - 4.5rem);
   gap: 4rem;
-  padding: 0 8rem;
 }
 
 .mission-img {
@@ -48,4 +46,58 @@
 
 .mission-img img {
   width: 100%;
+}
+
+.about-us {
+  background: var(--orange-light);
+  padding: 3rem 8rem 0.1rem 8rem;
+}
+
+.about-us .text {
+  margin-bottom: 3rem;
+}
+
+.about-us .text h2 {
+  margin-bottom: 2rem;
+  color: var(--blue-dark);
+}
+
+.team {
+  margin: 4rem 0 2rem 0;
+  gap: 3rem;
+}
+
+.team-member * {
+  margin: auto;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.team-member h3 {
+  color: var(--orange-main);
+}
+
+.contact-form form {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-form form input {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--orange-middle);
+  background: transparent;
+  padding: 0.2rem;
+  width: 20rem;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-form form input:focus {
+  border-bottom: 2px solid var(--orange-main);
+}
+
+.contact-form .text {
+  margin-bottom: 2rem;
 }

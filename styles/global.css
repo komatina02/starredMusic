@@ -4,6 +4,8 @@ html {
 
 :root {
   --orange-main: #ff4727;
+  --orange-middle: #ffb7ac;
+  --orange-light: #ffebe8;
   --blue-light: #e5f8ff;
   --blue-dark: #040661;
 }
@@ -48,17 +50,19 @@ a {
 }
 
 h1 {
-  font-size: 2.7rem;
+  font-size: 3rem;
   font-weight: 600;
+  letter-spacing: 2px;
 }
 
 h2 {
-  font-size: 1.8rem;
+  letter-spacing: 1px;
+  font-size: 2.1rem;
   font-weight: 500;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 
@@ -77,6 +81,10 @@ button {
   justify-content: space-between;
 }
 
+.padding-global {
+  padding: 0 8rem;
+}
+
 .page-container {
   width: calc(100vw - 0.3rem);
   overflow-x: hidden;
@@ -89,6 +97,7 @@ button {
   width: 100vw;
   height: 4.5rem;
   background: var(--blue-light);
+  z-index: 100;
 }
 
 .nav .links {
