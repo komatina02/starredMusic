@@ -130,9 +130,28 @@ footer .logo img,
 .nav img {
   width: 4rem;
 }
+
 footer .links {
   flex: 1;
 }
+
 footer .social-media {
   flex: 1;
+}
+
+textarea {
+  resize: none;
+  height: 12rem;
+  width: 100%;
+  border-radius: 1.5rem;
+  font-family: "Jost", sans-serif;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.8rem;
+  border: 2px solid var(--orange-middle);
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+textarea:focus {
+  border: 2px solid var(--orange-main);
 }

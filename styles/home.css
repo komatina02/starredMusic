@@ -89,7 +89,7 @@
   border-bottom: 2px solid var(--orange-middle);
   background: transparent;
   padding: 0.2rem;
-  width: 20rem;
+  width: 100%;
   font-size: 1.2rem;
   transition: all 0.3s ease-in-out;
 }
@@ -100,4 +100,12 @@
 
 .contact-form .text {
   margin-bottom: 2rem;
+}
+
+.contact-form img {
+  flex: 3;
+}
+
+.contact-form .left-content {
+  flex: 2;
 }
