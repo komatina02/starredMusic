@@ -53,23 +53,34 @@
       content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
     />
     <meta name="keywords" content="music, starred, best" />
+    <script
+      src="https://kit.fontawesome.com/d62d37aa96.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="page-container">
       <nav class="nav flex">
-        <div class="logo">
+        <div class="logo flex">
           <img src="./images/logo.png" alt="StarredMusic Logo" />
+          <span>StarredMusic</span>
         </div>
         <div class="responsive-menu flex">
           <ul class="links flex">
-            <li><a href="">Početna</a></li>
+            <li><a href="index.html">Početna</a></li>
             <li><a href="artists.html">Izvođači</a></li>
-            <li><a href="">Žanrovi</a></li>
-            <li><a href="">Instrumenti</a></li>
+            <li><a href="genres.html">Žanrovi</a></li>
+            <li><a href="instruments.html">Instrumenti</a></li>
           </ul>
-          <button class="main-btn">Kontakt</button>
+          <button class="main-btn contact-btn">Kontakt</button>
+        </div>
+        <div class="hamburger">
+          <div class="line first"></div>
+          <div class="line second"></div>
+          <div class="line third"></div>
         </div>
       </nav>
+      <div class="line-scroll"></div>
       <main class="hero flex padding-global">
         <div class="hero-text">
           <h1>StarredMusic</h1>
@@ -167,31 +178,66 @@
             <h2>A šta vi slušate?</h2>
             <p>Pošaljite nam vašu omiljenu numeru</p>
           </div>
-          <form action="" class="flex">
-            <input type="email" name="email" placeholder="Vaš mejl" />
-            <input type="text" name="song" placeholder="Unesite pesmu" />
-            <textarea name="" id="" autocomplete="off"></textarea>
-            <button type="submit"></button>
+          <form class="flex" name="contactForm" novalidate>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Vaš mejl"
+            />
+            <input
+              type="text"
+              name="song"
+              id="song"
+              placeholder="Unesite pesmu"
+            />
+            <textarea
+              name="textbox"
+              id="textbox"
+              autocomplete="off"
+              placeholder="Zašto je ovo Vaša omiljena pesma?"
+            ></textarea>
+            <button type="submit" class="main-btn">Pošalji</button>
           </form>
         </div>
-        <img
-          src="./images/homeImages/contactImg.png"
-          alt="StarredMusic contact"
-        />
+        <div class="contact-img">
+          <img
+            src="./images/homeImages/contactImg.jpg"
+            alt="StarredMusic contact"
+          />
+        </div>
       </section>
+      <img
+        src="./images/homeImages/footerWave.svg"
+        alt="Wave Css"
+        style="transform: translateY(7px)"
+      />
       <footer class="flex padding-global">
         <div class="logo">
           <img src="./images/logo.png" alt="StarredMusic Logo" />
+          <h3>StarredMusic</h3>
         </div>
-        <ul class="links">
-          <li><a href="">Početna</a></li>
-          <li><a href="">Izvođači</a></li>
-          <li><a href="">Žanrovi</a></li>
-          <li><a href="">Instrumenti</a></li>
-          <li><button>Kontakt</button></li>
+        <ul class="links flex">
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="artists.html">Izvođači</a></li>
+          <li><a href="genres.html">Žanrovi</a></li>
+          <li><a href="instruments.html">Instrumenti</a></li>
         </ul>
-        <div class="social-media"></div>
+        <div class="social-media">
+          <h3>Društvene mreže</h3>
+          <div class="icons flex">
+            <i class="fa-brands fa-instagram fa-2xl"></i>
+            <i class="fa-brands fa-facebook fa-2xl"></i>
+            <i class="fa-solid fa-envelope fa-2xl"></i>
+            <i class="fa-brands fa-twitter fa-2xl"></i>
+          </div>
+        </div>
       </footer>
     </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/domManipulation.js"></script>
+    <script src="./js/lodash.js"></script>
+    <script src="./js/scroll.js"></script>
   </body>
 </html>
