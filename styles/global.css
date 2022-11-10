@@ -276,6 +276,7 @@ textarea:focus {
   background: var(--orange-middle);
   position: fixed;
   top: 4.5rem;
+  z-index: 20;
 }
 
 @media (max-width: 1100px) {

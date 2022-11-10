@@ -6,6 +6,7 @@ form.addEventListener("submit", (e) => {
   let email = form["email"].value;
   let song = form["song"].value;
   let reason = form["textbox"].value;
+  let pol = form["pol"].value;
   if (email == "") {
     alert("Email must be filled out");
     return false;
@@ -21,11 +22,11 @@ form.addEventListener("submit", (e) => {
 
   if (reason !== "") {
     alert(
-      `${email} je predlozio da stavimo ovu pesmu u nasu plejlistu: ${song}. Razlog je sledeći: ${reason}`
+      `${email} je predlozio da stavimo ovu pesmu u nasu plejlistu: ${song}. Razlog je sledeći: ${reason}. Pol je ${pol}`
     );
   } else {
     alert(
-      `${email} je predlozio da stavimo ovu pesmu u nasu plejlistu: ${song}. Nema poseban razlog zbog čega`
+      `${email} je predlozio da stavimo ovu pesmu u nasu plejlistu: ${song}. Nema poseban razlog zbog čega. Pol je ${pol}`
     );
   }
 });

@@ -191,12 +191,32 @@
               id="song"
               placeholder="Unesite pesmu"
             />
+
             <textarea
               name="textbox"
               id="textbox"
               autocomplete="off"
               placeholder="Zašto je ovo Vaša omiljena pesma?"
             ></textarea>
+            <div class="polovi-group flex">
+              <label for="pol">Pol: </label>
+              <div class="polovi flex">
+                <div class="flex">
+                  <input
+                    type="radio"
+                    name="pol"
+                    value="muški"
+                    id="muški"
+                    checked
+                  />
+                  <label for="muški">Muški</label>
+                </div>
+                <div class="flex">
+                  <input type="radio" name="pol" value="ženski" id="ženski" />
+                  <label for="ženski">Ženski</label>
+                </div>
+              </div>
+            </div>
             <button type="submit" class="main-btn">Pošalji</button>
           </form>
         </div>
