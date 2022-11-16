@@ -18,6 +18,7 @@
 .artist img{
     width: 16rem;
     height: 17rem;
+    object-fit: contain;
     
 }
 

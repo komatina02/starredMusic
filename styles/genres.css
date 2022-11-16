@@ -60,7 +60,66 @@ iframe{
  flex: 4;
 }
 
+.jazz-text h1{
+  margin-bottom: 2rem;
+}
+
 .rep-text h1 {
  margin-bottom: 2rem;
  color: var(--blue-dark);
+}
+@media (max-width: 1100px) {
+  .hero-text p {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 750px) {
+
+  .hero,
+  .rok,
+  .jazz,
+  .rep {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  
+
+  /* .contact-form .left-content {
+    width: 100%;
+  }
+
+  .contact-form .text * {
+    text-align: center;
+  }
+
+  .contact-form form {
+    align-items: center;
+  } */
+
+  .hero-img {
+    flex: 1;
+  }
+
+  .hero-text {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .rok-text p {
+    text-align: center;
+  }
+
+  .jazz .text * {
+    text-align: center;
+  }
+
+  .rep-text * {
+    text-align: center;
+  }
 }
