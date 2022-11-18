@@ -5,134 +5,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StarredMusic | Žanrovi</title>
-    <!-- Treba dodati meta tagove -->
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/genres.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- Treba napraviti page-container -->
-    <!-- nav -->
-    <div class="page-container">
-    <nav class="nav flex">
-      <div class="logo">
-        <img src="./images/logo.png" alt="StarredMusic Logo" />
-      </div>
-      <div class="responsive-menu flex">
+    <div class="page-container genres">
+      <nav class="nav flex">
+        <div class="logo flex">
+          <img src="./images/logo.png" alt="StarredMusic Logo" />
+          <span>StarredMusic</span>
+        </div>
+        <div class="responsive-menu flex">
+          <ul class="links flex">
+            <li><a href="./index.html">Početna</a></li>
+            <li><a href="./artists.html">Izvođači</a></li>
+            <li><a href="./genres.html">Žanrovi</a></li>
+            <li><a href="./instruments.html">Instrumenti</a></li>
+          </ul>
+          <a href="./#kontakt-forma">
+            <button class="main-btn contact-btn">Kontakt</button>
+          </a>
+        </div>
+        <div class="hamburger">
+          <div class="line first"></div>
+          <div class="line second"></div>
+          <div class="line third"></div>
+        </div>
+      </nav>
+      <main class="hero txt-video padding-global">
+        <div class="hero-text">
+          <h1>Pop</h1>
+          <p>
+            U pop muzici tekst i pevanje preovlađuju nad kompozicijom i
+            instrumentalom. Ovu muziku odlikuju jednostavni harmonijski i
+            melodijski stil za razliku od rok muzike i postojanje refrena. Pesme
+            su kratke i uz njih se, uglavnom, može plesati. Ona je omiljena kod
+            širokih masa i samim tim i komercijalno uspešna. To je muzički žanr
+            sa najvećim brojem prodatih nosača zvuka. Naziv pop je nastao od
+            engleske reči „popular“ (popularan) što označava muziku za zabavu.
+          </p>
+        </div>
+        <div class="hero-iFrame">
+          <iframe
+            width="640"
+            height="360"
+            src="https://www.youtube.com/embed/TGlxdZmVLVI?list=RDTGlxdZmVLVI"
+            title="Petar Grašo - Ko nam brani"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </main>
+
+      <section class="rok txt-video padding-global">
+        <div class="rok-iFrame">
+          <iframe
+            width="640"
+            height="360"
+            src="https://www.youtube.com/embed/_yJBd99tLdU"
+            title="Queen - Face It Alone (Official Video)"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="rok-text">
+          <h1>Rok</h1>
+          <p>
+            Rok muzika je žanr popularne muzike koji se razvio tokom 1960ih u
+            Ujedinjenom Kraljevstvu i Sjedinjenim državama. Njegovi koreni
+            potiču od rokenrola iz 1940ih i 1950ih, na koga je uticao ritam,
+            bluz i kantri muzika. Na rok muziku su uticali brojni žanrovi kao
+            što su bluz, folk, džez i klasična muzika. Muzički gledano, rok je
+            zaosnovan na električnoj gitari, koja je obično deo neke rok grupe
+            sa bas-gitarom i bubnjevima. Tipična rok pesma je zaosnovana na 4/4
+            taktu upotrebljava pesničko-horsku formu.
+          </p>
+        </div>
+      </section>
+      <section class="jazz txt-video padding-global">
+        <div class="jazz-text">
+          <h1>Jazz</h1>
+          <p>
+            Džez je specifičan muzički pravac nastao krajem XIX veka u Nju
+            Orleansu (S.A.D.), sa korenima u afričkoj tradicionalnoj muzici.
+            Džez je prvenstveno bio narodna muzika porobljenog crnačkog naroda u
+            Americi da bi vremenom dobio status umetnosti i postao osnova bluz i
+            rokenrol muzike. Ovaj pravac karakterišu korišćenje bluz nota,
+            sinkopa, svinga, poliritmova i improvizacije. Od gore navedenih
+            karakteristika, najbitnija za džez je improvizacija koja ga odvaja
+            od klasične muzike.
+          </p>
+        </div>
+        <div class="jazz-iFrame">
+          <iframe
+            width="640"
+            height="360"
+            src="https://www.youtube.com/embed/VqhCQZaH4Vs"
+            title="Louis Armstrong - What A Wonderful World"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <section class="rep txt-video padding-global">
+        <div class="rep-iFrame">
+          <iframe
+            width="640"
+            height="360"
+            src="https://www.youtube.com/embed/XYUGBCjHPMc"
+            title="THCF-B2 - Ne brini 2016"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="rep-text">
+          <h1>Rep</h1>
+          <p>
+            Muzika nastala na ulicama crnackih cetvrti Njujorka krajem 70-ih i
+            pocetkom 80-ih (iako se ne zna pouzdano ali verovatno je nastala od
+            funk-a i rock-a) da bi kasnije se prosirila i na ostale delove
+            amerike a zatim i sveta. Muzika je zapocela kao revolt crnaca prema
+            tlacenju i ugnjetavanju, da bi kasnije izmedju ostalog pored
+            socijalnih zahvatila i mnoge druge teme.Ono sto je takodje
+            specificno za ovu vrstu muzike je to sto se najvise ceni iskrenost i
+            iskljucivo se gleda ko ima bolju i iskreniju pricu i na koji nacin
+            kroz stihove tu pricu pokusava da plasira.
+          </p>
+        </div>
+      </section>
+      <footer class="flex padding-global">
+        <div class="logo">
+          <img src="./images/logo.png" alt="StarredMusic Logo" />
+          <h3>StarredMusic</h3>
+        </div>
         <ul class="links flex">
           <li><a href="index.html">Početna</a></li>
           <li><a href="artists.html">Izvođači</a></li>
-          <li><a href="">Žanrovi</a></li>
+          <li><a href="genres.html">Žanrovi</a></li>
           <li><a href="instruments.html">Instrumenti</a></li>
         </ul>
-        <button class="main-btn">Kontakt</button>
-      </div>
-    </nav>
-    <main class="hero flex padding-global">
-      <div class="hero-text">
-        <h1>Pop</h1>
-        <p>
-          U pop muzici tekst i pevanje preovlađuju nad kompozicijom i instrumentalom. Ovu muziku odlikuju jednostavni
-          harmonijski i melodijski stil za razliku od rok muzike i postojanje refrena. Pesme su kratke i uz njih se, uglavnom,
-          može plesati. Ona je omiljena kod širokih masa i samim tim i komercijalno uspešna. To je muzički žanr sa najvećim brojem
-          prodatih nosača zvuka.
-          
-          Naziv pop je nastao od engleske reči „popular“ (popularan) što označava muziku za zabavu.
-        </p>
-        
-      </div>
-      <div class="hero-iFrame">
-      <iframe width="640" height="360" src="https://www.youtube.com/embed/TGlxdZmVLVI?list=RDTGlxdZmVLVI"
-        title="Petar Grašo - Ko nam brani" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-      </div>
-    </main>
+        <div class="social-media">
+          <h3>Društvene mreže</h3>
+          <div class="icons flex">
+            <i class="fa-brands fa-instagram fa-2xl"></i>
+            <i class="fa-brands fa-facebook fa-2xl"></i>
+            <i class="fa-solid fa-envelope fa-2xl"></i>
+            <i class="fa-brands fa-twitter fa-2xl"></i>
+          </div>
+        </div>
+      </footer>
     </div>
-    <section class="rok padding-global">
-
-      <div class="rok-iFrame">
-        <iframe width="640" height="360" src="https://www.youtube.com/embed/_yJBd99tLdU"
-          title="Queen - Face It Alone (Official Video)" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      </div>
-      <div class="rok-text">
-        <h1>Rok</h1>
-        <p>
-          Rok muzika je žanr popularne muzike koji se razvio tokom 1960ih u Ujedinjenom Kraljevstvu i Sjedinjenim državama.
-          Njegovi koreni potiču od rokenrola iz 1940ih i 1950ih, na koga je uticao ritam, bluz i kantri muzika. Na rok muziku su
-          uticali brojni žanrovi kao što su bluz, folk, džez i klasična muzika.
-          
-          Muzički gledano, rok je zaosnovan na električnoj gitari, koja je obično deo neke rok grupe sa bas-gitarom i bubnjevima.
-          Tipična rok pesma je zaosnovana na 4/4 taktu upotrebljava pesničko-horsku formu.
-        </p>
-      </div>
-     
-    </section>
-    <section class="jazz padding-global">
-    
-      
-      <div class="jazz-text">
-        <h1>Jazz</h1>
-        <p>
-          Džez je specifičan muzički pravac nastao krajem XIX veka u Nju Orleansu (S.A.D.), sa korenima u afričkoj tradicionalnoj
-          muzici. Džez je prvenstveno bio narodna muzika porobljenog crnačkog naroda u Americi da bi vremenom dobio status
-          umetnosti i postao osnova bluz i rokenrol muzike.
-          
-          
-          Ovaj pravac karakterišu korišćenje bluz nota, sinkopa, svinga, poliritmova i improvizacije. Od gore navedenih
-          karakteristika, najbitnija za džez je improvizacija koja ga odvaja od klasične muzike.
-        </p>
-      </div>
-
-      <div class="jazz-iFrame">
-        <iframe width="640" height="360" src="https://www.youtube.com/embed/VqhCQZaH4Vs"
-          title="Louis Armstrong - What A Wonderful World" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      </div>
-    
-    </section>
-    <section class="rep padding-global">
-    
-      <div class="rep-iFrame">
-      <iframe width="640" height="360" src="https://www.youtube.com/embed/XYUGBCjHPMc" title="THCF-B2 - Ne brini 2016"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-      </div>
-      <div class="rep-text">
-        <h1>Rep</h1>
-        <p>
-          Muzika nastala na ulicama crnackih cetvrti Njujorka krajem 70-ih i pocetkom 80-ih (iako se ne zna pouzdano ali verovatno
-          je nastala od funk-a i rock-a) da bi kasnije se prosirila i na ostale delove amerike a zatim i sveta.
-          Muzika je zapocela kao revolt crnaca prema tlacenju i ugnjetavanju, da bi kasnije izmedju ostalog pored socijalnih
-          zahvatila i mnoge druge teme.Ono sto je takodje specificno za ovu vrstu muzike je to sto se najvise ceni iskrenost i iskljucivo se gleda ko
-          ima bolju i iskreniju pricu i na koji nacin kroz stihove tu pricu pokusava da plasira.
-        </p>
-      </div>
-    
-    </section>
-  <footer class="flex padding-global">
-    <div class="logo">
-      <img src="./images/logo.png" alt="StarredMusic Logo" />
-      <h3>StarredMusic</h3>
-    </div>
-    <ul class="links flex">
-      <li><a href="index.html">Početna</a></li>
-      <li><a href="artists.html">Izvođači</a></li>
-      <li><a href="genres.html">Žanrovi</a></li>
-      <li><a href="instruments.html">Instrumenti</a></li>
-    </ul>
-    <div class="social-media">
-      <h3>Društvene mreže</h3>
-      <div class="icons flex">
-        <i class="fa-brands fa-instagram fa-2xl"></i>
-        <i class="fa-brands fa-facebook fa-2xl"></i>
-        <i class="fa-solid fa-envelope fa-2xl"></i>
-        <i class="fa-brands fa-twitter fa-2xl"></i>
-      </div>
-    </div>
-  </footer>
+    <script src="./js/nav.js"></script>
   </body>
 </html>

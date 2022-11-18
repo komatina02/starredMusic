@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://starred-music.rs/sitemap/sitemap-index.xml
+Host: https://starred-music.rs
